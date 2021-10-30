@@ -1,0 +1,4 @@
+.page-background {
+  background: url("images/background.png") no-repeat center fixed;
+  background-size: cover;
+}
