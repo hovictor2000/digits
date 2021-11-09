@@ -43,7 +43,7 @@ export default withTracker(() => {
   const subscription = Meteor.subscribe(Contacts.userPublicationName);
   const subNotes = Meteor.subscribe(Notes.userPublicationName);
   // Determine if the subscription is ready
-  const ready = (subscription.ready() && subNotes);
+  const ready = (subscription.ready() && subNotes.ready());
   // Get the Stuff documents
   const contacts = Contacts.collection.find({}).fetch();
   const notes = Notes.collection.find({}).fetch();
